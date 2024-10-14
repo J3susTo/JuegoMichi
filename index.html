@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desarrollo del Árbol Heurístico para Tic-Tac-Toe</title>
+    <style>
+        /* Estilo General */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #005a9c;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h2, h3 {
+            color: #005a9c;
+        }
+        p, ul {
+            margin: 10px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Botón de Descarga */
+        .download-link {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #ff5722;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+        .download-link:hover {
+            background-color: #e64a19;
+        }
+
+        /* Pie de Página */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Estilo para los enlaces */
+        a {
+            color: #005a9c;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilos responsivos */
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Desarrollo del Árbol Heurístico para Tic-Tac-Toe</h1>
+</header>
+
+<div class="container">
+    <h2>1. Introducción</h2>
+    <p>
+        El juego de Tic-Tac-Toe, conocido como Michi, es un clásico de estrategias sencillas pero profundas. En este informe, se detalla el desarrollo de un <strong>árbol heurístico</strong> que permite al jugador humano (X) tomar decisiones optimizadas para maximizar sus posibilidades de ganar, mientras la máquina (O) trata de minimizar su éxito.
+    </p>
+
+    <h2>2. Descripción del Proyecto</h2>
+    <p>
+        El objetivo del proyecto es simular una partida de Michi, utilizando el <strong>enfoque heurístico</strong> para la toma de decisiones, alternando entre el <strong>máximo</strong> (jugador humano) y el <strong>mínimo</strong> (máquina). 
+    </p>
+
+    <h2>3. Árbol Heurístico de Decisiones</h2>
+    <p>
+        A continuación, se presenta el diagrama que ilustra el árbol de decisiones para una partida de Tic-Tac-Toe. En cada nivel del árbol, se alternan las jugadas entre el <strong>Hombre (X)</strong> y la <strong>Máquina (O)</strong>.
+    </p>
+    
+    <img src="desarrollo.jpg" alt="Árbol Heurístico de Michi">
+
+    <h2>4. Pasos para la Solución</h2>
+    <h3>Paso 1: Inicio del Juego</h3>
+    <p>
+        El juego comienza con el tablero vacío, y el jugador humano (X) toma su primera decisión estratégica.
+    </p>
+
+    <h3>Paso 2: Alternancia entre Jugadas Máximo-Mínimo</h3>
+    <p>
+        El hombre busca maximizar sus oportunidades de ganar, mientras que la máquina elige jugadas que minimicen las posibilidades del hombre.
+    </p>
+
+    <h3>Paso 3: Cálculo de Puntajes</h3>
+    <p>
+        En cada turno, se calcula un puntaje que refleja el <strong>potencial de éxito</strong> de la jugada.
+    </p>
+
+    <h3>Paso 4: Evaluación de Resultados</h3>
+    <p>
+        Al final de la partida, el árbol muestra cómo, al seguir una estrategia óptima, el hombre puede ganar el juego.
+    </p>
+
+    <h2>5. Resultados</h2>
+    <p>
+        El <strong>árbol heurístico</strong> demuestra que, con una estrategia optimizada, el jugador humano tiene altas probabilidades de ganar.
+    </p>
+
+    <h2>6. Conclusiones</h2>
+    <p>
+        El desarrollo de este <strong>árbol heurístico para Tic-Tac-Toe</strong> ha sido fundamental para entender cómo se toman decisiones en escenarios competitivos de este tipo.
+    </p>
+
+    <h2>7. Información Adicional</h2>
+    <p>
+        <strong>Recursos utilizados:</strong><br>
+        - Lenguaje: Desarrollado con base en algoritmos de toma de decisiones.<br>
+        - Herramientas: Diseño del árbol heurístico en <strong>Microsoft Excel</strong>
+    </p>
+
+    <h2>8. Contacto</h2>
+    <p>
+        Para más información sobre este proyecto, puedes ponerte en contacto con nosotros a través de los siguientes medios:
+    </p>
+    <ul>
+        <li>Correo electrónico: <a href="mailto:jflores@tcsistemas.com.pe">Grupo 02 - Curso: Inteligencia Artificial</a></li>
+
+    </ul>
+
+    <h2>9. Descarga del Proyecto</h2>
+    <a class="download-link" href="desarrollo.jpg" download>Descargar Diagrama del Árbol Heurístico</a>
+</div>
+
+<footer>
+    <p>© 2024 Proyecto Árbol Heurístico de Tic-Tac-Toe</p>
+</footer>
+
+</body>
+</html>
